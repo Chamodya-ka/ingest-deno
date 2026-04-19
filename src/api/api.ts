@@ -16,7 +16,7 @@ function setCORSHeaders(req: IRequest, res: Response) {
 	res.headers.set("Access-Control-Expose-Headers", "X-Number-Of-Records");
 	res.headers.set(
 		"Access-Control-Allow-Origin",
-		req.headers.get("Origin") || "*"
+		"*"
 	);
 }
 
