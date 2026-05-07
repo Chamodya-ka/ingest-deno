@@ -31,7 +31,7 @@ services:
       [
         "/bin/sh",
         "-c",
-        "chmod +x ./wait-for-db.sh && ./wait-for-db.sh timescaledb:5432 -- deno run --allow-ffi --allow-net --allow-read --allow-env --allow-run --allow-sys --unstable-cron --unstable-net server.ts",
+        "chmod +x ./wait-for-db.sh && ./wait-for-db.sh timescaledb:5432 -- deno run --allow-ffi --allow-net --allow-read --allow-env --env-file --allow-run --allow-sys --unstable-cron --unstable-net server.ts",
       ]
 
 volumes:
